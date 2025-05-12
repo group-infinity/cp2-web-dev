@@ -1,0 +1,122 @@
+/* Reset CSS */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;   
+}
+
+/* Variáveis CSS */
+
+
+:root{
+    --color-light: #f1f1f1;
+    --color-dark: #333333;
+    --color-red: rgb(247, 23, 53);
+    --radius: 8px;
+    --gradient: linear-gradient(to top, rgba(0, 0, 0, .6), rgba(0, 0, 0, .3));
+}
+
+/* ------------------- Formatação Base CSS ------------------ */
+html {
+    font-size: 62.5%;
+}
+
+body{
+    font-size: 1.6rem;
+}
+
+a{
+    text-decoration: none;
+    color: var(--color-light);
+    font-weight: 900;
+    transition: color .5s;
+}
+
+a:hover {
+    color: var(--color-red);
+}
+
+ul, ol {
+    list-style: none;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+}
+
+
+/* ----------------- Fim Da Formatação Base CSS -----------------*/
+/* ----------------- Hero da página -------------------------- */
+
+.hero{
+    width: 100%;
+    min-height: 100dvh;
+    padding: 3rem;
+    background-image: var(--gradient), url(../assets/banner.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50%;
+    color: var(--color-light);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header img {
+    width: 200px;
+    position: relative;
+    z-index: 2;
+}
+span {
+    color: var(--color-red);
+}
+
+.header-menu {
+    display: flex;
+    gap: 2rem;
+}
+
+.sanduiche {
+    cursor: pointer;
+    position: relative;
+    z-index: 2;
+    display: none;
+}
+
+.barra {
+    display: block;
+    width: 3rem;
+    height: .3rem;
+    background-color: var(--color-light);
+    margin: .5rem auto;
+    border-radius: var(--radius);
+    transition: .5s;
+}
+
+.header-footer h1 {
+    font-size: clamp(2.5rem, 6vmax, 8rem);
+    
+}
+
+.header-footer p {
+    font-size: 2rem;
+    font-weight: 800;
+    margin-left: .5rem;
+}
+
+#linha {
+    display: flex;
+    background-color: var(--color-red);
+    height: 10px;
+    width: 22vw;
+    margin-top: 20px;
+}
+/* ----------------- Fim Hero da página -------------------------- */
