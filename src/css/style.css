@@ -120,3 +120,66 @@ span {
     margin-top: 20px;
 }
 /* ----------------- Fim Hero da página -------------------------- */
+/* ----------------- Seção de Carros -------------------------- */
+
+.carros {
+    background-color: var(--color-light);
+    padding: 4rem 2rem;
+    display: grid;
+    gap: 3rem;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+}
+
+.carro-card {
+    background-color: var(--color-dark);
+    color: var(--color-light);
+    border-radius: var(--radius);
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    transition: transform 0.3s ease;
+}
+
+.carro-card:hover {
+    transform: translateY(-5px);
+}
+
+.carro-card img {
+    border-radius: var(--radius);
+    height: 300px;
+    object-fit: fit;
+    width: 100%;
+    aspect-ratio: 16/9;
+}
+
+.carro-card p {
+    text-align: center;
+    font-weight: 600;
+    font-size: 2.5rem;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    width: 100%;
+}
+
+.carro-card h3 {
+    font-size: 3rem;
+    color: var(--color-red);
+}
+
+.carro-card button {
+    padding: 1rem 2rem;
+    border: none;
+    border-radius: var(--radius);
+    background-color: var(--color-red);
+    color: var(--color-light);
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.carro-card button:hover {
+    background-color: #c70030;
+}
