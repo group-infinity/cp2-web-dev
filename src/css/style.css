@@ -1,185 +1,208 @@
-/* Reset CSS */
-
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;   
+/* Variáveis CSS */
+:root {
+  --color-light: #f1f1f1;
+  --color-dark: #333333;
+  --color-red: rgb(247, 23, 53);
+  --radius: 10px;
+  --gradient: linear-gradient(to top, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.3));
 }
 
-/* Variáveis CSS */
-
-
-:root{
-    --color-light: #f1f1f1;
-    --color-dark: #333333;
-    --color-red: rgb(247, 23, 53);
-    --radius: 8px;
-    --gradient: linear-gradient(to top, rgba(0, 0, 0, .6), rgba(0, 0, 0, .3));
+/* Reset CSS */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 /* ------------------- Formatação Base CSS ------------------ */
-html {
-    font-size: 62.5%;
-}
 
-body{
-    font-size: 1.6rem;
-}
-
-a{
-    text-decoration: none;
-    color: var(--color-light);
-    font-weight: 900;
-    transition: color .5s;
+a {
+  text-decoration: none;
+  color: var(--color-light);
+  font-weight: 900;
+  transition: color 0.5s;
 }
 
 a:hover {
-    color: var(--color-red);
+  color: var(--color-red);
 }
 
-ul, ol {
-    list-style: none;
+ul,
+ol {
+  list-style: none;
 }
 
 img {
-    display: block;
-    max-width: 100%;
+  display: block;
+  max-width: 100%;
 }
 
+span {
+  color: var(--color-red);
+}
 
 /* ----------------- Fim Da Formatação Base CSS -----------------*/
 /* ----------------- Hero da página -------------------------- */
 
-.hero{
-    width: 100%;
-    min-height: 100dvh;
-    padding: 3rem;
-    background-image: var(--gradient), url(../assets/banner.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: 50%;
-    color: var(--color-light);
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+.hero {
+  width: 100%;
+  min-height: 100dvh;
+  padding: 1.875rem;
+  background-image: var(--gradient), url(../assets/banner.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50%;
+  color: var(--color-light);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
-.header{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 1rem;
 }
 
 .header img {
-    width: 200px;
-    position: relative;
-    z-index: 2;
-}
-span {
-    color: var(--color-red);
+  width: 200px;
+  position: relative;
+  z-index: 2;
+  cursor: pointer;
 }
 
 .header-menu {
-    display: flex;
-    gap: 2rem;
+  display: flex;
+  font-size: 1.5rem;
+  gap: 1.25rem;
 }
 
 .sanduiche {
-    cursor: pointer;
-    position: relative;
-    z-index: 2;
-    display: none;
+  cursor: pointer;
+  position: relative;
+  z-index: 2;
+  display: none;
 }
 
 .barra {
-    display: block;
-    width: 3rem;
-    height: .3rem;
-    background-color: var(--color-light);
-    margin: .5rem auto;
-    border-radius: var(--radius);
-    transition: .5s;
+  display: block;
+  width: 1.8rem;
+  height: 0.1rem;
+  background-color: var(--color-light);
+  margin: 0.3rem auto;
+  border-radius: var(--radius);
+  transition: 0.5s;
 }
 
 .header-footer h1 {
-    font-size: clamp(2.5rem, 6vmax, 8rem);
-    
+  font-size: clamp(1.5625rem, 6vmax, 5rem);
 }
 
 .header-footer p {
-    font-size: 2rem;
-    font-weight: 800;
-    margin-left: .5rem;
+  font-size: 1.25rem;
+  font-weight: 800;
+  margin-left: 0.3rem;
 }
 
 #linha {
-    display: flex;
+  color: var(--color-light);
+  position: relative;
+  &::before {
+    content: "";
+    position: absolute;
     background-color: var(--color-red);
+    top: 104%;
     height: 10px;
-    width: 22vw;
-    margin-top: 20px;
+    width: 100%;
+    display: none;
+  }
 }
 /* ----------------- Fim Hero da página -------------------------- */
 /* ----------------- Seção de Carros -------------------------- */
 
 .carros {
-    background-color: var(--color-light);
-    padding: 4rem 2rem;
-    display: grid;
-    gap: 3rem;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  background-color: var(--color-light);
+  max-width: 100%;
+  padding: 2.5rem 1.25rem;
+  display: flex;
+  justify-content: center;
+  flex-flow: row wrap;
+  gap: 1.9rem;
 }
 
 .carro-card {
-    background-color: var(--color-dark);
-    color: var(--color-light);
-    border-radius: var(--radius);
-    padding: 2rem;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 1rem;
-    transition: transform 0.3s ease;
+  background-color: var(--color-dark);
+  color: var(--color-light);
+  border-radius: var(--radius);
+  padding: 1.25rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  transition: transform 0.3s ease;
 }
 
 .carro-card:hover {
-    transform: translateY(-5px);
+  transform: translateY(-5px);
 }
 
 .carro-card img {
-    border-radius: var(--radius);
-    height: 300px;
-    object-fit: fit;
-    width: 100%;
-    aspect-ratio: 16/9;
+  border-radius: calc(var(--radius) / 2);
+  aspect-ratio: 16/9;
 }
 
 .carro-card p {
-    text-align: center;
-    font-weight: 600;
-    font-size: 2.5rem;
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    width: 100%;
+  text-align: center;
+  font-weight: 600;
+  font-size: 1.56rem;
+  width: 100%;
 }
 
 .carro-card h3 {
-    font-size: 3rem;
-    color: var(--color-red);
+  font-size: 2rem;
+  text-align: center;
+  color: var(--color-red);
 }
 
 .carro-card button {
-    padding: 1rem 2rem;
-    border: none;
-    border-radius: var(--radius);
-    background-color: var(--color-red);
-    color: var(--color-light);
-    font-weight: bold;
-    cursor: pointer;
-    transition: background-color 0.3s;
+  padding: 1rem;
+  font-size: 1rem;
+  border: none;
+  border-radius: calc(var(--radius) / 2);
+  background-color: var(--color-red);
+  color: var(--color-light);
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s;
 }
 
 .carro-card button:hover {
-    background-color: #c70030;
+  background-color: #c70030;
+}
+
+
+/* Media queries */
+@media only screen and (max-width: 600px) {
+  .header-menu {
+    display: none;
+  }
+  .header img{
+    width: 150px;
+  }
+  .sanduiche {
+    display: flex;
+    flex-flow: column nowrap;
+    gap: 1px;
+  }
+}
+
+@media only screen and (min-width: 746px) {
+  #linha {
+    &::before {
+      display: block;
+    }
+  }
+  .carro-card {
+    max-width: 45%;
+  }
 }
