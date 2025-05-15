@@ -15,6 +15,7 @@
 }
 
 /* ------------------- Formatação Base CSS ------------------ */
+
 a {
   text-decoration: none;
   color: var(--color-light);
@@ -42,7 +43,7 @@ span {
 }
 
 /* ----------------- Hero da página -------------------------- */
-.hero {
+#hero {
   width: 100%;
   min-height: 100dvh;
   padding: 1.875rem;
@@ -130,14 +131,18 @@ span {
   transition: transform 0.4s;
 }
 
-.menu-toggle:checked ~ .menu {
+.menu-toggle:checked:focus-within ~ .menu {
   right: 0;
 }
 
-.menu-toggle:checked ~ .menu-icon {
+.menu-toggle:checked ~ .menu li span{
+  display: none;
+}
+
+.menu-toggle:checked:focus-within ~ .menu-icon {
   background-image: url("../assets/close-menu.svg");
   transform: rotate(90deg);
-  position: fixed;
+  position: absolute;
   right: 10%;
 }
 
@@ -148,7 +153,7 @@ span {
   display: none;
 }
 
-.menu-toggle:checked ~ #menu-bg {
+.menu-toggle:checked:focus-within ~ #menu-bg {
   display: block;
   top: 0;
   left: 0;
@@ -193,7 +198,7 @@ span {
 }
 
 /* ----------------- Seção de Carros -------------------------- */
-.carros {
+#carros {
   background-color: var(--color-light);
   width: 100%;
   padding: 2.5rem 5rem;
@@ -272,7 +277,7 @@ span {
     width: 150px;
   }
 
-  .carros {
+  #carros {
     padding: 2.5rem 1.5rem;
   }
 }
@@ -300,7 +305,7 @@ span {
     display: block;
   }
 
-  .carros {
+  #carros {
     padding: 2.5rem 1.5rem;
   }
 
