@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 
 <head>
     <meta charset="UTF-8">
@@ -7,67 +7,84 @@
     <title>Infinity Cars</title>
 
     <link rel="stylesheet" href="./src/css/style.css">
-
     <link rel="stylesheet" href="./src/css/fonts.css">
 </head>
 
 <body>
+    <header class="hero">
+        <div class="header">
+            <img src="./src/assets/logo.png" alt="Infinity Cars Logo">
 
+            <input type="checkbox" id="menu-toggle" class="menu-toggle">
+            <label for="menu-toggle" class="menu-icon"></label>
+
+            <nav>
+                <ul class="menu">
+                    <li>
+                        <a href="#">Home</a>
+                        <span></span>
+                    </li>
+                    <li>
+                        <a href="#">Carros</a>
+                        <span></span>
+                    </li>
+                    <li>
+                        <a href="#">Sobre</a>
+                        <span></span>
+                    </li>
+                    <li>
+                        <a href="./src/pages/quiz.html">Quiz</a>
+                        <span></span>
+                    </li>
+                </ul>
+            </nav>
+
+            <span id="menu-bg"></span>
+        </div>
+
+        <div class="header-footer">
+            <h1><span id="linha">CONHEÇA</span> NOSSOS <span>CARROS</span></h1>
+            <span></span>
+        </div>
+    </header>
+
+    <main>
+        <section class="carros">
+            <div class="carro-card">
+                <div class="img-container">
+                    <img src="./src/assets/carro1.jpg" alt="BYD Seal 2025">
+                </div>
+                <p>BYD Seal 2025</p>
+                <button>Fazer Orçamento</button>
+            </div>
+
+            <div class="carro-card">
+                <div class="img-container">
+                    <img src="./src/assets/carro2.jpg" alt="BYD Shark 2025">
+                </div>
+                <p>BYD Shark 2025</p>
+                <button>Fazer Orçamento</button>
+            </div>
+
+            <div class="carro-card">
+                <div class="img-container">
+                    <img src="./src/assets/carro3.jpg" alt="GWM Ora 03 2024">
+                </div>
+                <p>GWM Ora 03 2024</p>
+                <button>Fazer Orçamento</button>
+            </div>
+
+            <div class="carro-card">
+                <div class="img-container">
+                    <img src="./src/assets/carro4.jpg" alt="Porsche Taycan Turbo S 2026">
+                </div>
+                <p>Porsche Taycan Turbo S 2026</p>
+                <button>Fazer Orçamento</button>
+            </div>
+        </section>
+    </main>
+
+    <script src="./src/js/main.js"></script>
 </body>
 
 </html>
-<!-------------------- Hero da página ----------------------->
-<section class="hero">
-    <header class="header">
-        <img src="./src/assets/logo.png" alt="logo">
-        <nav>
-            <div class="sanduiche">
-                <span class="barra"></span>
-                <span class="barra"></span>
-                <span class="barra"></span>
-            </div>
-
-            <ul class="header-menu">
-                <li><a href="" class="item-menu">Home</a></li>
-                <li><a href="" class="item-menu">Carros</a></li>
-                <li><a href="" class="item-menu">Sobre</a></li>
-                <li><a href="./src/pages/quiz.html" class="item-menu">Quiz</a></li>
-            </ul>
-        </nav>
-        <!-- Botão sanduíche -->
-
-    </header>
-    <!-- Fim header da página -->
-
-    <footer class="header-footer">
-        <h1><span id="linha">CONHEÇA</span> NOSSOS <span>CARROS</span></h1>
-        </span>
-    </footer>
-</section>
-<!-------------------- Fim Hero da página ----------------------->
-<section class="carros">
-    <div class="carro-card">
-        <img src="./src/assets/carro1.jpg" alt="Carro">
-        <p>BYD Seal</p>
-        <h3>R$300.000,00</h3>
-        <button>Fazer Orçamento</button>
-    </div>
-    <div class="carro-card">
-        <img src="./src/assets/carro2.jpg" alt="Carro">
-        <p>BYD Shark</p>
-        <h3>R$379.800,00</h3>
-        <button>Fazer Orçamento</button>
-    </div>
-    <div class="carro-card">
-        <img src="./src/assets/carro3.jpg" alt="Carro">
-        <p>GWM Ora 03</p>
-        <h3>R$160.000,00</h3>
-        <button>Fazer Orçamento</button>
-    </div>
-    <div class="carro-card">
-        <img src="./src/assets/carro4.jpg" alt="Carro">
-        <p>Porsche Taycan Turbo S</p>
-        <h3>R$XXX.XXX,XX</h3>
-        <button>Fazer Orçamento</button>
-    </div>
-</section>
