@@ -57,17 +57,6 @@ span {
   justify-content: space-between;
 }
 
-/* .banner #image{
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100dvw;
-  height: 100dvh;
-  z-index: -1;
-  background-size: cover;
-  aspect-ratio: 16/9;
-} */
-
 .header {
   display: flex;
   justify-content: space-between;
@@ -133,7 +122,7 @@ span {
 }
 
 .menu-icon {
-  background-image: url("../assets/menu-burger.svg");
+  background-image: url("../assets/header/menu-burger.svg");
   background-repeat: no-repeat;
   background-size: cover;
   width: 30px;
@@ -146,12 +135,12 @@ span {
   right: 0;
 }
 
-.menu-toggle:checked ~ .menu li span{
+.menu-toggle:checked ~ .menu li span {
   display: none;
 }
 
 .menu-toggle:checked:focus-within ~ .menu-icon {
-  background-image: url("../assets/close-menu.svg");
+  background-image: url("../assets/header/close-menu.svg");
   transform: rotate(90deg);
   position: absolute;
   right: 10%;
