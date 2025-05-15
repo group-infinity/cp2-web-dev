@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
@@ -7,82 +7,81 @@
     <title>Infinity Cars</title>
 
     <link rel="stylesheet" href="./src/css/style.css">
+
     <link rel="stylesheet" href="./src/css/fonts.css">
 </head>
 
 <body>
-    <header class="hero">
-        <div class="header">
-            <img src="./src/assets/logo.png" alt="Infinity Cars Logo">
+    <!-------------------- Hero da página ----------------------->
+    <section class="hero">
+        <header class="header">
+            <img src="./src/assets/logo.png" alt="logo">
 
+            <!-- Checkbox escondido -->
             <input type="checkbox" id="menu-toggle" class="menu-toggle">
+            <!-- Label atua como botão hambúrguer -->
             <label for="menu-toggle" class="menu-icon"></label>
 
-            <nav>
-                <ul class="menu">
-                    <li>
-                        <a href="#">Home</a>
-                        <span></span>
-                    </li>
-                    <li>
-                        <a href="#">Carros</a>
-                        <span></span>
-                    </li>
-                    <li>
-                        <a href="#">Sobre</a>
-                        <span></span>
-                    </li>
-                    <li>
-                        <a href="./src/pages/quiz.html">Quiz</a>
-                        <span></span>
-                    </li>
-                </ul>
-            </nav>
-
+            <!-- Menu lateral -->
+            <ul class="menu">
+                <li>
+                    <a href="#">Home</a>
+                    <span></span>
+                </li>
+                <li>
+                    <a href="#">Carros</a>
+                    <span></span>
+                </li>
+                <li>
+                    <a href="#">Sobre</a>
+                    <span></span>
+                </li>
+                <li>
+                    <a href="./src/pages/quiz.html">Quiz</a>
+                    <span></span>
+                </li>
+            </ul>
             <span id="menu-bg"></span>
-        </div>
+        </header>
+
+
 
         <div class="header-footer">
             <h1><span id="linha">CONHEÇA</span> NOSSOS <span>CARROS</span></h1>
-            <span></span>
+            </span>
         </div>
-    </header>
-
-    <main>
-        <section class="carros">
-            <div class="carro-card">
-                <div class="img-container">
-                    <img src="./src/assets/carro1.jpg" alt="BYD Seal 2025">
-                </div>
-                <p>BYD Seal 2025</p>
-                <button>Fazer Orçamento</button>
+    </section>
+    <!-------------------- Lista de carros ----------------------->
+    <section class="carros">
+        <div class="carro-card">
+            <div class="img-container">
+                <img src="./src/assets/carro1.jpg" alt="Carro">
             </div>
-
-            <div class="carro-card">
-                <div class="img-container">
-                    <img src="./src/assets/carro2.jpg" alt="BYD Shark 2025">
-                </div>
-                <p>BYD Shark 2025</p>
-                <button>Fazer Orçamento</button>
+            <p>BYD Seal 2025</p>
+            <button>Fazer Orçamento</button>
+        </div>
+        <div class="carro-card">
+            <div class="img-container">
+                <img src="./src/assets/carro2.jpg" alt="Carro">
             </div>
-
-            <div class="carro-card">
-                <div class="img-container">
-                    <img src="./src/assets/carro3.jpg" alt="GWM Ora 03 2024">
-                </div>
-                <p>GWM Ora 03 2024</p>
-                <button>Fazer Orçamento</button>
+            <p>BYD Shark 2025</p>
+            <button>Fazer Orçamento</button>
+        </div>
+        <div class="carro-card">
+            <div class="img-container">
+                <img src="./src/assets/carro3.jpg" alt="Carro">
             </div>
-
-            <div class="carro-card">
-                <div class="img-container">
-                    <img src="./src/assets/carro4.jpg" alt="Porsche Taycan Turbo S 2026">
-                </div>
-                <p>Porsche Taycan Turbo S 2026</p>
-                <button>Fazer Orçamento</button>
+            <p>GWM Ora 03 2024</p>
+            <button>Fazer Orçamento</button>
+        </div>
+        <div class="carro-card">
+            <div class="img-container">
+                <img src="./src/assets/carro4.jpg" alt="Carro">
             </div>
-        </section>
-    </main>
+            <p>Porsche Taycan Turbo S 2026</p>
+            <button>Fazer Orçamento</button>
+        </div>
+    </section>
 
     <script src="./src/js/main.js"></script>
 </body>
