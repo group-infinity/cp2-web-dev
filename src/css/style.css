@@ -47,7 +47,7 @@ span {
   width: 100%;
   min-height: 100dvh;
   padding: 1.875rem;
-  background-image: var(--gradient), url(../assets/banner.jpg);
+  background-image: var(--gradient);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: 50%;
@@ -56,6 +56,17 @@ span {
   flex-direction: column;
   justify-content: space-between;
 }
+
+/* .banner #image{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100dvw;
+  height: 100dvh;
+  z-index: -1;
+  background-size: cover;
+  aspect-ratio: 16/9;
+} */
 
 .header {
   display: flex;
