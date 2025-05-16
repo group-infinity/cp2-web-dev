@@ -3,121 +3,124 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
     <title>Infinity Cars</title>
 
-    <link rel="shortcut icon" href="./src/assets/page-icon.png" type="image/x-icon">
+    <link href="./src/assets/page-icon.png" rel="shortcut icon" type="image/x-icon">
 
-    <link rel="stylesheet" href="./src/css/style.css">
+    <link href="./src/css/style.css" rel="stylesheet">
 
-    <link rel="stylesheet" href="./src/css/fonts.css">
+    <link href="./src/css/fonts.css" rel="stylesheet">
 </head>
 
 <body>
-    <!-------------------- Hero da página --------------------->
+<!-------------------- Hero da página --------------------->
 
-    <section id="hero">
-        <header class="header">
-            <img src="./src/assets/header/logo.png" alt="logo">
+<section id="hero">
+    <header class="header">
+        <img class="logo" alt="logo" src="./src/assets/header/logo.png">
 
-            <!-- Checkbox escondido -->
-            <input type="checkbox" id="menu-toggle" class="menu-toggle">
-            <!-- Label atua como botão hambúrguer -->
-            <label for="menu-toggle" class="menu-icon"></label>
+        <!-- Checkbox escondido -->
+        <input class="menu-toggle" id="menu-toggle" type="checkbox">
+        <!-- Label atua como botão hambúrguer -->
+        <label class="menu-icon" for="menu-toggle"></label>
 
-            <!-- Menu lateral -->
-            <ul class="menu">
-                <li>
-                    <a href="#hero">Home</a>
-                    <span></span>
-                </li>
-                <li>
-                    <a href="#carros">Carros</a>
-                    <span></span>
-                </li>
-                <li>
-                    <a href="#">Sobre</a>
-                    <span></span>
-                </li>
-                <li>
-                    <a href="./src/pages/quiz.html">Quiz</a>
-                    <span></span>
-                </li>
-            </ul>
-            <span id="menu-bg"></span>
-        </header>
+        <!-- Menu lateral -->
+        <ul class="menu">
+            <li>
+                <a href="#hero">Home</a>
+                <span></span>
+            </li>
+            <li>
+                <a href="#carros">Carros</a>
+                <span></span>
+            </li>
+            <li>
+                <a href="#sobre">Sobre</a>
+                <span></span>
+            </li>
+            <li>
+                <a href="./src/pages/quiz.html">Quiz</a>
+                <span></span>
+            </li>
+        </ul>
+        <span id="menu-bg"></span>
+    </header>
 
-        <div class="header-footer">
-            <h1><span id="linha">CONHEÇA</span> NOSSOS <span>CARROS</span></h1>
-            </span>
+    <div class="header-footer">
+        <h1><span class="linha">CONHEÇA</span> NOSSOS <span>CARROS</span></h1>
+    </div>
+</section>
+<!-------------------- Lista de carros ----------------------->
+<section id="carros">
+    <div class="carro-card">
+        <div class="img-container">
+            <img alt="Carro" src="./src/assets/carros/carro1.jpg">
         </div>
-    </section>
-    <!-------------------- Lista de carros ----------------------->
-    <section id="carros">
-        <div class="carro-card">
-            <div class="img-container">
-                <img src="./src/assets/carros/carro1.jpg" alt="Carro">
-            </div>
-            <p>BYD Seal 2025</p>
-            <button>Fazer Orçamento</button>
+        <p>BYD Seal 2025</p>
+        <button>Fazer Orçamento</button>
+    </div>
+    <div class="carro-card">
+        <div class="img-container">
+            <img alt="Carro" src="./src/assets/carros/carro2.jpg">
         </div>
-        <div class="carro-card">
-            <div class="img-container">
-                <img src="./src/assets/carros/carro2.jpg" alt="Carro">
-            </div>
-            <p>BYD Shark 2025</p>
-            <button>Fazer Orçamento</button>
+        <p>BYD Shark 2025</p>
+        <button>Fazer Orçamento</button>
+    </div>
+    <div class="carro-card">
+        <div class="img-container">
+            <img alt="Carro" src="./src/assets/carros/carro3.jpg">
         </div>
-        <div class="carro-card">
-            <div class="img-container">
-                <img src="./src/assets/carros/carro3.jpg" alt="Carro">
-            </div>
-            <p>GWM Ora 03 2024</p>
-            <button>Fazer Orçamento</button>
+        <p>GWM Ora 03 2024</p>
+        <button>Fazer Orçamento</button>
+    </div>
+    <div class="carro-card">
+        <div class="img-container">
+            <img alt="Carro" src="./src/assets/carros/carro4.jpg">
         </div>
-        <div class="carro-card">
-            <div class="img-container">
-                <img src="./src/assets/carros/carro4.jpg" alt="Carro">
-            </div>
-            <p>Porsche Taycan Turbo S 2026</p>
-            <button>Fazer Orçamento</button>
-        </div>
-    </section>
+        <p>Porsche Taycan Turbo S 2026</p>
+        <button>Fazer Orçamento</button>
+    </div>
+</section>
 
-    <!-- SOBRE INFINITY CARS -->
+<!-- SOBRE INFINITY CARS -->
 
-    <section id="sobre" class="sobre-container">
-        <h2>Sobre a <span style="color:#ff1e44;">Infinity Cars</span></h2>
-        <hr class="linha-decorativa" />
-        <p>A Infinity Cars é uma empresa pioneira em mobilidade elétrica, dedicada a oferecer carros 100% elétricos que
-            combinam design sofisticado, alta performance e tecnologia avançada. Com foco em sustentabilidade,
-            proporciona uma experiência silenciosa, eficiente e inovadora, promovendo energia limpa, segurança e estilo
-            para transformar a forma de dirigir.</p>
-        <p> Os carros elétricos representam a evolução do transporte, oferecendo uma condução silenciosa, eficiente e
-            sustentável, com zero emissão de poluentes. Com torque instantâneo, muitos aceleram mais rápido que veículos
-            a combustão e têm manutenção mais barata devido à menor complexidade mecânica. Além de conforto e tecnologia
-            avançada, são uma escolha inteligente que alia luxo, potência e compromisso ambiental.</p>
-    </section>
+<section class="sobre-container" id="sobre">
 
-    <!-- FOOTER -->
-    <section class="contato-footer">
-        <div class="contato-info">
-            <img src="./src/assets/header/logo.png" alt="Logo Infinity Cars" class="logo-vermelho" />
-            <p><strong>Telefone para contato:</strong> (11) 12345-6789</p>
-            <p><strong>Email:</strong> infinitycars@gmail.com</p>
-        </div>
+    <h2><span class="linha">Sobre a</span> <span style="color:#ff1e44;">Infinity Cars</span></h2>
+
+    <p>A Infinity Cars é uma empresa pioneira em mobilidade elétrica, dedicada a oferecer carros 100% elétricos que
+        combinam design sofisticado, alta performance e tecnologia avançada. Com foco em sustentabilidade,
+        proporciona uma experiência silenciosa, eficiente e inovadora, promovendo energia limpa, segurança e estilo
+        para transformar a forma de dirigir.
+    </p>
+    <br>
+    <p> Os carros elétricos representam a evolução do transporte, oferecendo uma condução silenciosa, eficiente e
+        sustentável, com zero emissão de poluentes. Com torque instantâneo, muitos aceleram mais rápido que veículos
+        a combustão e têm manutenção mais barata devido à menor complexidade mecânica. Além de conforto e tecnologia
+        avançada, são uma escolha inteligente que alia luxo, potência e compromisso ambiental.
+    </p>
+</section>
+
+<!-- FOOTER -->
+<footer class="contato-footer">
+    <section class="contato-info">
+        <img alt="Logo Infinity Cars" class="logo" src="./src/assets/header/logo.png"/>
+        <p><strong>Telefone para contato:</strong> (11) 12345-6789</p>
+        <p><strong>Email:</strong> infinitycars@gmail.com</p>
 
         <div class="copyright">
             <p>© Infinity Cars 2025. Todos os direitos reservados.</p>
         </div>
-
-        <div class="creditos">
-            <p>Criado por: Infinity Group</p>
-        </div>
     </section>
 
-    <!-- Chamando javascript externo -->
-    <script src="./src/js/script.js"></script>
+    <div class="creditos">
+        <p>Criado por: Infinity Group</p>
+    </div>
+</footer>
+
+<!-- Chamando javascript externo -->
+<script src="./src/js/script.js"></script>
 </body>
 
 </html>
