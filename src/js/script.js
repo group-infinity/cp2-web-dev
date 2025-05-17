@@ -20,32 +20,3 @@ function slideShow() {
   setTimeout("slideShow()", tempo);
 }
 slideShow();
-
-// JS DO QUIZ
-function irParaQuiz() {
-  alert("Seja bem-vindo(a) ao quiz do infinity cars");
-  window.location.href = "./src/pages/quiz.html";
-}
-
-document.addEventListener('DOMContentLoaded', function () {
-  const quizForm = document.getElementById('quiz-form');
-
-  if (quizForm) {
-    quizForm.addEventListener('submit', function (e) {
-      e.preventDefault();
-
-      // Mostrar a mensagem final (alert ou no HTML)
-      const mensagem = "Obrigada por responder o nosso quiz. Analisaremos suas preferências.";
-
-      // Exibe no alerta
-      alert(mensagem);
-
-      // Ou exibe na tela (se preferir)
-      const resultadoDiv = document.getElementById('resultado');
-      if (resultadoDiv) {
-        resultadoDiv.innerText = mensagem;
-      }
-    });
-  }
-});
-

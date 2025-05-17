@@ -1,12 +1,36 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="../assets/page-icon.png" rel="shortcut icon" type="image/x-icon">
+
+  <link href="../css/quiz.css" rel="stylesheet">
+  <link href="../css/style.css" rel="stylesheet">
+  <link href="../css/fonts.css" rel="stylesheet">
+
   <title>Questionário - Infinity Cars</title>
-  <link rel="stylesheet" href="../css/quiz.css" />
 </head>
+
 <body>
+  <header class="header">
+    <img class="logo" alt="logo" src="../assets/header/logo.png">
+
+    <!-- Checkbox escondido -->
+    <input class="menu-toggle" id="menu-toggle" type="checkbox">
+    <!-- Label atua como botão hambúrguer -->
+    <label class="menu-icon" for="menu-toggle"></label>
+
+    <!-- Menu lateral -->
+    <ul class="menu">
+      <li>
+        <a href="../../index.html">Home</a>
+        <span></span>
+      </li>
+    </ul>
+    <span id="menu-bg"></span>
+  </header>
   <main class="quiz-container">
     <h1>Questionário de Interesse</h1>
     <form id="quiz-form">
@@ -77,11 +101,15 @@
       </div>
 
       <button type="submit">Enviar</button>
-    </form>
 
-    <div id="resultado" class="resultado"></div>
+      <div id="resultado-container" class="resultado">
+        <h2>Resultado:</h2>
+        <p id="resultado"></p>
+      </div>
+    </form>
   </main>
 
-  <script src="../js/script.js"></script>
+  <script src="../js/quiz.js" defer></script>
 </body>
+
 </html>
